@@ -1,8 +1,12 @@
 const express = require('express');
 
+const {registerRouter} = require('./routes/register.routes');
+
 const {db} = require('./utils/database')
 
 const app = express();
+
+app.use('/api/v1/register',registerRouter);
 
 app.use(express.json());
 

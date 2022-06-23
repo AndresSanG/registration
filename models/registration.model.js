@@ -14,7 +14,6 @@ const Registration = db.define('registration',{
     },
     exitTime:{
         type:DataTypes.DATE,
-        allowNull:false
     },
     status:{
         type:DataTypes.DATE,
